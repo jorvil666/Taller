@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tallerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CabeceraIngreso">
+    <Key>
+      <PropertyRef Name="idCabecera" />
+    </Key>
+    <Property Name="idCabecera" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idVehiculo" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="Int32" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_CabeceraIngreso_Vehiculo" FromRole="CabeceraIngreso" ToRole="Vehiculo" />
+    <NavigationProperty Name="DetalleIngreso" Relationship="Self.FK_DetalleIngreso_CabeceraIngreso" FromRole="CabeceraIngreso" ToRole="DetalleIngreso" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="idCliente" />
+    </Key>
+    <Property Name="idCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="apellidoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="direccionCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fonoCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="emailCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="estadoCliente" Type="Int32" />
+    <NavigationProperty Name="Vehiculo" Relationship="Self.FK_Vehiculo_Cliente" FromRole="Cliente" ToRole="Vehiculo" />
+  </EntityType>
+  <EntityType Name="DetalleIngreso">
+    <Key>
+      <PropertyRef Name="idDetalle" />
+    </Key>
+    <Property Name="idDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idIngreso" Type="Int32" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="idServicios" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CabeceraIngreso" Relationship="Self.FK_DetalleIngreso_CabeceraIngreso" FromRole="DetalleIngreso" ToRole="CabeceraIngreso" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK_DetalleIngreso_Servicios" FromRole="DetalleIngreso" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="idServicios" />
+    </Key>
+    <Property Name="idServicios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="servicioNombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="servicioDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="estado" Type="Int32" />
+    <NavigationProperty Name="DetalleIngreso" Relationship="Self.FK_DetalleIngreso_Servicios" FromRole="Servicios" ToRole="DetalleIngreso" />
+  </EntityType>
+  <EntityType Name="Vehiculo">
+    <Key>
+      <PropertyRef Name="idVehiculo" />
+    </Key>
+    <Property Name="idVehiculo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCliente" Type="Int32" Nullable="false" />
+    <Property Name="marca" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="modelo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="placa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="CabeceraIngreso" Relationship="Self.FK_CabeceraIngreso_Vehiculo" FromRole="Vehiculo" ToRole="CabeceraIngreso" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Vehiculo_Cliente" FromRole="Vehiculo" ToRole="Cliente" />
+  </EntityType>
+  <Association Name="FK_CabeceraIngreso_Vehiculo">
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="1" />
+    <End Role="CabeceraIngreso" Type="Self.CabeceraIngreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehiculo">
+        <PropertyRef Name="idVehiculo" />
+      </Principal>
+      <Dependent Role="CabeceraIngreso">
+        <PropertyRef Name="idVehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleIngreso_CabeceraIngreso">
+    <End Role="CabeceraIngreso" Type="Self.CabeceraIngreso" Multiplicity="0..1" />
+    <End Role="DetalleIngreso" Type="Self.DetalleIngreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CabeceraIngreso">
+        <PropertyRef Name="idCabecera" />
+      </Principal>
+      <Dependent Role="DetalleIngreso">
+        <PropertyRef Name="idIngreso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehiculo_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleIngreso_Servicios">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="1" />
+    <End Role="DetalleIngreso" Type="Self.DetalleIngreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="idServicios" />
+      </Principal>
+      <Dependent Role="DetalleIngreso">
+        <PropertyRef Name="idServicios" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="tallerDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CabeceraIngreso" EntityType="Self.CabeceraIngreso" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="DetalleIngreso" EntityType="Self.DetalleIngreso" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+    <EntitySet Name="Vehiculo" EntityType="Self.Vehiculo" />
+    <AssociationSet Name="FK_CabeceraIngreso_Vehiculo" Association="Self.FK_CabeceraIngreso_Vehiculo">
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+      <End Role="CabeceraIngreso" EntitySet="CabeceraIngreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleIngreso_CabeceraIngreso" Association="Self.FK_DetalleIngreso_CabeceraIngreso">
+      <End Role="CabeceraIngreso" EntitySet="CabeceraIngreso" />
+      <End Role="DetalleIngreso" EntitySet="DetalleIngreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehiculo_Cliente" Association="Self.FK_Vehiculo_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleIngreso_Servicios" Association="Self.FK_DetalleIngreso_Servicios">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="DetalleIngreso" EntitySet="DetalleIngreso" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

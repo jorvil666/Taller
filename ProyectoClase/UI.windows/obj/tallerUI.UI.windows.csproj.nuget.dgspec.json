@@ -1,0 +1,129 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\UI.windows\\tallerUI.UI.windows.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Aplicacion\\tallerUI.Aplicacion.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Aplicacion\\tallerUI.Aplicacion.csproj",
+        "projectName": "tallerUI.Aplicacion",
+        "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Aplicacion\\tallerUI.Aplicacion.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj": {
+                "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj"
+              },
+              "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Infra.DataAccess\\tallerUI.Infra.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Infra.DataAccess\\tallerUI.Infra.DataAccess.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj",
+        "projectName": "Dominio.Modelo",
+        "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Infra.DataAccess\\tallerUI.Infra.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Infra.DataAccess\\tallerUI.Infra.DataAccess.csproj",
+        "projectName": "tallerUI.Infra.DataAccess",
+        "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Infra.DataAccess\\tallerUI.Infra.DataAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj": {
+                "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\UI.windows\\tallerUI.UI.windows.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\UI.windows\\tallerUI.UI.windows.csproj",
+        "projectName": "tallerUI.UI.windows",
+        "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\UI.windows\\tallerUI.UI.windows.csproj",
+        "packagesPath": "C:\\Users\\jorge.castro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\UI.windows\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jorge.castro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Aplicacion\\tallerUI.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Aplicacion\\tallerUI.Aplicacion.csproj"
+              },
+              "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj": {
+                "projectPath": "C:\\Users\\jorge.castro\\Desktop\\UISRAEL\\Sexto Semestre\\Desarrollo de Software 1\\Programas\\ProyectoClase\\Dominio.Modelo\\Dominio.Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

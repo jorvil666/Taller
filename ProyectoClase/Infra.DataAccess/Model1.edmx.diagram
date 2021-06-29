@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e4e3f7bbc434a358830d7d373349e10" Name="Diagram1">
+        <EntityTypeShape EntityType="tallerDBModel.CabeceraIngreso" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tallerDBModel.Cliente" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tallerDBModel.DetalleIngreso" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="tallerDBModel.Servicios" Width="1.5" PointX="7.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="tallerDBModel.Vehiculo" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="tallerDBModel.FK_CabeceraIngreso_Vehiculo" ManuallyRouted="false" />
+        <AssociationConnector Association="tallerDBModel.FK_DetalleIngreso_CabeceraIngreso" ManuallyRouted="false" />
+        <AssociationConnector Association="tallerDBModel.FK_Vehiculo_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="tallerDBModel.FK_DetalleIngreso_Servicios" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

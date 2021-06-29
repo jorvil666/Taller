@@ -1,0 +1,14 @@
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\Infra.DataAccess.dll.config
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\Infra.DataAccess.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\Infra.DataAccess.pdb
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\Dominio.Modelo.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\Dominio.Modelo.pdb
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\obj\Debug\tallerUI.Infra.DataAccess.csprojAssemblyReference.cache
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\obj\Debug\tallerUI.Infra.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\obj\Debug\tallerUI.Infra.DataAccess.csproj.CopyComplete
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\obj\Debug\Infra.DataAccess.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Infra.DataAccess\obj\Debug\Infra.DataAccess.pdb

@@ -1,0 +1,6 @@
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\bin\Debug\Dominio.Modelo.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\bin\Debug\Dominio.Modelo.pdb
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\obj\Debug\Dominio.Modelo.csprojAssemblyReference.cache
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\obj\Debug\Dominio.Modelo.csproj.CoreCompileInputs.cache
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\obj\Debug\Dominio.Modelo.dll
+C:\Users\jorge.castro\Desktop\UISRAEL\Sexto Semestre\Desarrollo de Software 1\Programas\ProyectoClase\Dominio.Modelo\obj\Debug\Dominio.Modelo.pdb
